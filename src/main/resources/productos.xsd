@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://idat.com/tiendaonline"
+           xmlns="http://idat.com/tiendaonline"
+           elementFormDefault="qualified">
+
+    <xs:element name="ConsultarProductoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombreProducto" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ConsultarProductoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="disponibilidad" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
